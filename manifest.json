@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "Sci-Hubibtex",
+  "short_name": "sci-hubibtex",
+  "version": "0.0.1",
+  "author": "Lars Eppinger",
+  "homepage_url": "https://github.com/lars250698/Sci-Hubibtex",
+  "description": "Get your bibtex citation with a single button press on Sci-Hub",
+  "icons": {
+    "48": "icons/48x48.png",
+    "96": "icons/96x96.png"
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "48": "icons/48x48.png",
+      "96": "icons/96x96.png"
+    },
+    "default_title": "Sci-Hub Now!",
+    "theme_icons": [
+      {
+        "light": "icons/48x48_white.png",
+        "dark": "icons/48x48.png",
+        "size": 48
+      },
+      {
+        "light": "icons/96x96_white.png",
+        "dark": "icons/96x96.png",
+        "size": 96
+      }
+    ]
+  },
+  "permissions": ["<all_urls>", "tabs"],
+  "background": {
+    "scripts": ["browser-polyfill.js", "background.js"]
+  }
+}
